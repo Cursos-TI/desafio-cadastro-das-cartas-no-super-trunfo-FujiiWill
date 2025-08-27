@@ -37,13 +37,13 @@ int main() {
     scanf(" %s", nomeCidade1);
     printf("Informe o numero de habitantes da cidade:\n");
     scanf("%d", &populacao1);
-    printf("Informe a estencao territorial da cidade em km²:\n");
+    printf("Informe a estensao territorial da cidade em km²:\n");
     scanf("%f", &area1);
     printf("Informe o PIB da cidade em bilhoes de reais:\n");
     scanf("%f", &pib1);
     printf("Informe a quantidade de pontos turisticos que a cidade possui:\n");
-    scanf("%d\n", &pontosTuristicos1);
-    
+    scanf("%d", &pontosTuristicos1);
+
 
     printf("Por favor, entre com os dados da carta 02.\n");
     printf("Digite o Estado (entre as letras A e H):\n");
@@ -54,18 +54,18 @@ int main() {
     scanf(" %s", nomeCidade2);
     printf("Informe o numero de habitantes da cidade:\n");
     scanf("%d", &populacao2);
-    printf("Informe a estencao territorial da cidade em km²:\n");
+    printf("Informe a estensao territorial da cidade em km²:\n");
     scanf("%f", &area2);
     printf("Informe o PIB da cidade em bilhoes de reais:\n");
     scanf("%f", &pib2);
     printf("Informe a quantidade de pontos turisticos que a cidade possui:\n");
-    scanf("%d\n", &pontosTuristicos2);
+    scanf("%d", &pontosTuristicos2);
     
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    printf("Carta 1:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n", estado1, estado1, codigoCarta1, nomeCidade1, populacao1, area1, pib1, pontosTuristicos1);
-    printf("Carta 2:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n", estado2, estado2, codigoCarta2, nomeCidade2, populacao2, area2, pib2, pontosTuristicos2);
+    printf("Carta 1:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n\n", estado1, estado1, codigoCarta1, nomeCidade1, populacao1, area1, pib1, pontosTuristicos1);
+    printf("Carta 2:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n\n", estado2, estado2, codigoCarta2, nomeCidade2, populacao2, area2, pib2, pontosTuristicos2);
 
     return 0;
 }
