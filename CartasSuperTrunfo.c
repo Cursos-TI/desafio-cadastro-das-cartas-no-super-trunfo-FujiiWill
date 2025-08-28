@@ -45,12 +45,10 @@ int main() {
     scanf("%d", &pontosTuristicos1);
 
     //Wiliam: Calculo da densidade populacional
-    float densidadePopulacional1 = populacao1 / area1;
-    float densidadePopulacional2 = populacao2 / area2;
+    float densidadePopulacional1 = (float) populacao1 / area1;
 
     //Wiliam: Calculo do PIB per capita
-    float pibPerCapita1 = pib1 / populacao1;
-    float pibPerCapita2 = pib2 / populacao2;
+    float pibPerCapita1 = (float) pib1 * 1000000000.00  / populacao1;
 
     printf("Por favor, entre com os dados da carta 02.\n");
     printf("Digite o Estado (entre as letras A e H):\n");
@@ -67,16 +65,23 @@ int main() {
     scanf("%f", &pib2);
     printf("Informe a quantidade de pontos turisticos que a cidade possui:\n");
     scanf("%d", &pontosTuristicos2);
+
+    //Wiliam: Calculo da densidade populacional
+    float densidadePopulacional2 = (float) populacao2 / area2;
+
+    //Wiliam: Calculo do PIB per capita
+    float pibPerCapita2 = (float) pib2 * 1000000000.00 / populacao2;
+
     
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
-    printf("Carta 1:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n\n", estado1, estado1, codigoCarta1, nomeCidade1, populacao1, area1, pib1, pontosTuristicos1);
+    printf("Carta 1:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n", estado1, estado1, codigoCarta1, nomeCidade1, populacao1, area1, pib1, pontosTuristicos1);
     //Wiliam: Para ficar mais facil identificar as alteracoes realizadas vou optar por adicionar os novos dados separadamente.
-    printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n", densidadePopulacional1, pibPerCapita1);
-    printf("Carta 2:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n\n", estado2, estado2, codigoCarta2, nomeCidade2, populacao2, area2, pib2, pontosTuristicos2);
+    printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\n", densidadePopulacional1, pibPerCapita1);
+    printf("Carta 2:\nEstado: %c\nCódigo: %c%s\nNome da Cidade: %s\nPopulação: %d\nÁrea: %.2f em km²\nPIB: %.2f bilhões de reais\nNúmero de Pontos Turísticos: %d\n", estado2, estado2, codigoCarta2, nomeCidade2, populacao2, area2, pib2, pontosTuristicos2);
     //Wiliam: A seguir temos o acrescimo de informações das cartas.
-    printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n", densidadePopulacional2, pibPerCapita2);
+    printf("Densidade Populacional: %.2f hab/km²\nPIB per Capita: %.2f reais\n\n", densidadePopulacional2, pibPerCapita2);
 
     return 0;
 }
