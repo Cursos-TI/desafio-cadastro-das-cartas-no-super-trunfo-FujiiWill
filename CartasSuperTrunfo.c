@@ -96,7 +96,7 @@ int main() {
     int comparacaoArea = area1 > area2;
     int comparacaoPib = pib1 > pib2;
     int comparacaoPontosTuristicos = pontosTuristicos1 > pontosTuristicos2;
-    int comparacaoDensidade = densidadePopulacional1 > densidadePopulacional2;
+    int comparacaoDensidade = densidadePopulacional1 < densidadePopulacional2;
     int comparacaoPibPerCapita = pibPerCapita1 > pibPerCapita2;
     int comparacaoSuperPoder = superPoder1 > superPoder2;
 
